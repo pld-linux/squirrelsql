@@ -1,5 +1,5 @@
 Summary:	SQL database manager
-Summary(pl):	Mened¿er SQLowych baz danych
+Summary(pl):	Zarz±dca SQL-owych baz danych
 Name:		squirrelsql
 Version:	1.0final2
 Release:	1
@@ -19,7 +19,7 @@ view the structure of a JDBC compliant database, browse the data in
 tables, issue SQL commands etc.
 
 %description -l pl
-SQuirreL SQL CLient jest graficznym programem napisanym w Javie, który
+Klient SQL SQuirreL jest graficznym programem napisanym w Javie, który
 pozwala przegl±daæ strukturê baz danych zgodnych z JDBC, przegl±daæ
 dane w tabelach, wysy³aæ polecenia SQL-owe itp.
 
