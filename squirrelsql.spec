@@ -14,18 +14,18 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_prefix		/usr/X11R6
 
 %description
-SQuirreL SQL Client is a graphical Java program that will allow you to view the
-structure of a JDBC compliant database, browse the data in tables, issue SQL
-commands etc.
+SQuirreL SQL Client is a graphical Java program that will allow you to
+view the structure of a JDBC compliant database, browse the data in
+tables, issue SQL commands etc.
 
 %description -l pl
-SQuirreL SQL CLient jest graficznym programem napisanym w Javie, który pozwala
-przegl±daæ strukturê baz danych zgodnych z JDBC, przegl±daæ dane w tabelach,
-wysy³aæ polecenia SQLowe itp.
+SQuirreL SQL CLient jest graficznym programem napisanym w Javie, który
+pozwala przegl±daæ strukturê baz danych zgodnych z JDBC, przegl±daæ
+dane w tabelach, wysy³aæ polecenia SQL-owe itp.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/{opt/%{name}-%{version},%{_bindir},%{_applnkdir}/Utilities}
+install -d $RPM_BUILD_ROOT{/opt/%{name}-%{version},%{_bindir},%{_applnkdir}/Utilities}
 cd $RPM_BUILD_ROOT/opt/%{name}-%{version}
 tar xfz %{SOURCE0}
 
