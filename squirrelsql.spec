@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Databases/Interfaces
 Source0:	http://twtelecom.dl.sourceforge.net/sourceforge/squirrel-sql/squirrel-sql-1.0final2.tar.gz
+# Source0-md5:	ae31f24db8fa27f85994bb676b79b1c7
 Source1:	squirrelsql.desktop
 URL:		http://squirrel-sql.sourceforge.net/
 BuildArch:	noarch
