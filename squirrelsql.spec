@@ -5,13 +5,12 @@ Version:	1.0final2
 Release:	1
 License:	GPL
 Group:		Applications/Databases/Interfaces
-Source0:	http://dl.sourceforge.net/sourceforge/squirrel-sql/squirrel-sql-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/squirrel-sql/squirrel-sql-%{version}.tar.gz
 # Source0-md5:	ae31f24db8fa27f85994bb676b79b1c7
 Source1:	squirrelsql.desktop
 URL:		http://squirrel-sql.sourceforge.net/
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 SQuirreL SQL Client is a graphical Java program that will allow you to
@@ -31,7 +30,7 @@ install -d $RPM_BUILD_ROOT{/opt/%{name}-%{version},%{_bindir},%{_applnkdir}/Util
 cd $RPM_BUILD_ROOT/opt/%{name}-%{version}
 tar xfz %{SOURCE0}
 
-install %{SOURCE1} $RPM_BUILD_ROOT/%{_applnkdir}/Utilities
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Utilities
 
 cat << EOF > $RPM_BUILD_ROOT%{_bindir}/squirrelsql
 #!/bin/sh
@@ -44,8 +43,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) /opt/%{name}-%{version}/*.sh
 %attr(755,root,root) %{_bindir}/*
+%dir /opt/%{name}-%{version}
+%attr(755,root,root) /opt/%{name}-%{version}/*.sh
 /opt/%{name}-%{version}/*.jar
 /opt/%{name}-%{version}/[dlp]*
 %{_applnkdir}/Utilities/*
