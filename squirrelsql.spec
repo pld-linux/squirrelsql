@@ -23,6 +23,8 @@ SQuirreL SQL CLient jest graficznym programem napisanym w Javie, który
 pozwala przegl±daæ strukturê baz danych zgodnych z JDBC, przegl±daæ
 dane w tabelach, wysy³aæ polecenia SQL-owe itp.
 
+%prep
+
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{/opt/%{name}-%{version},%{_bindir},%{_applnkdir}/Utilities}
