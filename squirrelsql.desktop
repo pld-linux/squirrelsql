@@ -2,6 +2,6 @@
 Encoding=UTF-8
 Name=SQuirreL SQL
 Exec=squirrelsql
-Terminal=0
+Terminal=false
 Type=Application
 # vim:encoding=utf-8
