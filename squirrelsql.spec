@@ -1,5 +1,5 @@
 Summary:	SQL database manager
-Summary(pl.UTF-8):   Zarządca SQL-owych baz danych
+Summary(pl.UTF-8):	Zarządca SQL-owych baz danych
 Name:		squirrelsql
 Version:	1.0final2
 Release:	1
