@@ -26,11 +26,11 @@ dane w tabelach, wysyłać polecenia SQL-owe itp.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{/opt/%{name}-%{version},%{_bindir},%{_applnkdir}/Utilities}
+install -d $RPM_BUILD_ROOT{/opt/%{name}-%{version},%{_bindir},%{_desktopdir}}
 cd $RPM_BUILD_ROOT/opt/%{name}-%{version}
 tar xfz %{SOURCE0}
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Utilities
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 cat << EOF > $RPM_BUILD_ROOT%{_bindir}/squirrelsql
 #!/bin/sh
@@ -48,4 +48,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) /opt/%{name}-%{version}/*.sh
 /opt/%{name}-%{version}/*.jar
 /opt/%{name}-%{version}/[dlp]*
-%{_applnkdir}/Utilities/*
+%{_desktopdir}/*.desktop
